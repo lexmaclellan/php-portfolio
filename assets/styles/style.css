@@ -1,0 +1,122 @@
+@font-face {
+    font-family: CourierPrime;
+    src: url(/assets/fonts/Courier-Prime.ttf);
+}
+
+@font-face {
+    font-family: CourierPrimeBold;
+    src: url(/assets/fonts/Courier-Prime-Bold.ttf);
+}
+
+@font-face {
+    font-family: CourierPrimeItalic;
+    src: url(/assets/fonts/Courier-Prime-Italic.ttf);
+}
+
+@font-face {
+    font-family: CourierPrimeBoldItalic;
+    src: url(/assets/fonts/Courier-Prime-Bold-Italic.ttf);
+}
+
+:root {
+    --deep-rose: #4d1932;
+    --lightest-gold: #e0e0eb;
+    --dark-crimson: #270c19;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--deep-rose);
+    font-family: CourierPrime, 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    color: var(--lightest-gold);
+}
+
+nav {
+    padding: 0.5em;
+    background-color: var(--dark-crimson);
+    font-family: CourierPrime, 'Courier New', Courier, monospace;
+    border-bottom: 1px solid black;
+}
+
+a {
+    color: var(--lightest-gold);
+    text-decoration: underline;
+}
+
+a:link {
+    color: var(--lightest-gold);
+}
+
+a:visited {
+    color: var(--lightest-gold);
+}
+
+a:hover {
+    color: var(--lightest-gold);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--lightest-gold);
+}
+
+nav a {
+    color: var(--lightest-gold);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--lightest-gold);
+    text-decoration: underline;
+}
+
+nav .h1 {
+    color: var(--lightest-gold);
+}
+
+.navbar-brand:hover {
+    color: var(--lightest-gold);
+}
+
+.navbar-nav {
+    margin-top: 1px;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    color: var(--lightest-gold);
+}
+
+main {
+    padding: 0em 2em;
+}
+
+footer {
+    padding: 0em 2em;
+}
+
+@media (min-width:600px) {
+    main {
+        padding: 0em 4em;
+    }
+
+    footer {
+        padding: 0em 4em;
+    }
+}
+
+@media (min-width:900px) {
+    main {
+        padding: 0em 10%;
+    }
+
+    footer {
+        padding: 0em 10%;
+    }
+}
