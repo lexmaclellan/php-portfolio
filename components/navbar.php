@@ -1,19 +1,23 @@
-<nav class="navbar navbar-expand-md">
-    <a class="navbar-brand h1 mb-0" href="#">lex maclellan</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    about
+<nav class="navbar">
+    <h1>
+        <a class="" href="#">
+            lex maclellan
+        </a>
+    </h1>
+    <div class="nav-options">
+        <ul>
+            <li>
+                <a href="#">
+                    about me
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
+            <li>
+                <a href="#">
                     portfolio
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
+            <li>
+                <a href="#">
                     contact
                 </a>
             </li>
