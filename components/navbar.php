@@ -1,24 +1,24 @@
 <nav class="navbar">
     <h1>
         <a class="" href="/index.php">
-            lex maclellan
+            Lex MacLellan
         </a>
     </h1>
     <div class="nav-options">
         <ul>
             <li>
                 <a href="/about.php">
-                    about me
+                    About Me
                 </a>
             </li>
             <li>
                 <a href="/portfolio.php">
-                    portfolio
+                    Portfolio
                 </a>
             </li>
             <li>
                 <a href="/contact.php">
-                    contact
+                    Contact
                 </a>
             </li>
         </ul>
