@@ -27,9 +27,10 @@
 /****************/
 
 :root {
-    --deep-rose: #4d1932;
-    --lightest-gold: #e0e0eb;
-    --dark-crimson: #270c19;
+    --body-bg-color: #666699;
+    --body-text-color: #e0e0eb;
+    --header-color: #3d3d5c;
+    --box-bg-color: #33334d;
     --font-standard: 1.1em;
 }
 
@@ -43,25 +44,25 @@
 }
 
 body {
-    background-color: var(--deep-rose);
+    background-color: var(--body-bg-color);
     font-family: CourierPrime, 'Courier New', Courier, monospace;
     font-size: var(--font-standard);
-    color: var(--lightest-gold);
+    color: var(--body-text-color);
 }
 
 a {
-    color: var(--lightest-gold);
+    color: var(--body-text-color);
     text-decoration: underline;
 }
 
 a:link,
 a:visited,
 a:active {
-    color: var(--lightest-gold);
+    color: var(--body-text-color);
 }
 
 a:hover {
-    color: var(--lightest-gold);
+    color: var(--body-text-color);
     text-decoration: none;
 }
 
@@ -71,7 +72,7 @@ a:hover {
 
 header {
     display: flex;
-    background-color: var(--dark-crimson);
+    background-color: var(--header-color);
     border-bottom: 1px solid black;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +94,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -1px;
 }
 
 .nav-options li {
@@ -123,7 +125,24 @@ header {
 /**************/
 
 main {
-    padding: 0em 5%;
+    padding: 2em 5% 0 5%;
+}
+
+.box {
+    box-shadow: 10px 10px black;
+    margin: 0 10%;
+    background-color: var(--box-bg-color);
+    border: 1px solid black;
+}
+
+.box p {
+    margin: 0.5em;
+}
+
+.box-header {
+    border-bottom: 1px solid black;
+    background-color: var(--header-color);
+    padding: 0.5em;
 }
 
 /****************/
@@ -131,13 +150,14 @@ main {
 /****************/
 
 footer {
-    padding: 0em 5%;
+    text-align: center;
+    padding: 2em 5%;
 }
 
 /************************/
 /**** responsiveness ****/
 /************************/
-@media all and (max-width:575px) {
+@media all and (max-width:640px) {
     .navbar {
         display: block;
     }
@@ -149,5 +169,16 @@ footer {
     .nav-options li {
         display: inline-block;
         margin: 0.25em 1.5em 0 0;
+    }
+
+    .box {
+        margin: 0;
+    }
+}
+
+@media all and (max-width:900px) {
+
+    .box {
+        margin: 0 3%;
     }
 }
